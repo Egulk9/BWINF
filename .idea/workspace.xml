@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06f03038-0e2d-42e9-823a-103a7a4db0e6" name="Default Changelist" comment="" />
+    <list default="true" id="06f03038-0e2d-42e9-823a-103a7a4db0e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Map.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,10 +43,54 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="100" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1589919064028">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="100" y="125" width="1653" height="855" key="DiffContextDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919064028" />
     <state x="714" y="469" key="Github.CreateGistDialog" timestamp="1589915792632">
       <screen x="0" y="27" width="1853" height="1053" />
     </state>
     <state x="714" y="469" key="Github.CreateGistDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589915792632" />
+    <state x="720" y="289" width="403" height="526" key="VcsDiffUtil.ChangesDialog" timestamp="1589919206055">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="720" y="289" width="403" height="526" key="VcsDiffUtil.ChangesDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919206055" />
   </component>
 </project>
