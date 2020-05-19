@@ -1,0 +1,17 @@
+*.log
+*.lock
+*.cache
+*.tmp
+*.pwd
+*.class
+*.o
+*.a
+**/vendor
+**/node_modules
+**/public
+**/out
+**/dist
+*.DS_Store
+*.db
+
+
