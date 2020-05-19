@@ -29,6 +29,77 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Map.py" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+  </component>
+  <component name="RunManager" selected="Python.Map">
+    <configuration name="Map" type="PythonConfigurationType" factoryName="Python">
+      <module name="Map" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Map" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="draw_maze" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Maze" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Maze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Maze/draw_maze.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Map" />
+      <item itemvalue="Python.draw_maze" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1589913696558</updated>
     </task>
+    <task id="LOCAL-00001" summary="22:23">
+      <created>1589919835153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589919835153</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,18 +158,113 @@
       </set>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="22:23" />
+    <option name="LAST_COMMIT_MESSAGE" value="22:23" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="384" y="210" width="1084" height="753" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589920635606">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="384" y="210" width="1084" height="753" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589920635606" />
+    <state x="709" y="294" width="424" height="584" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589920159169">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="709" y="294" width="424" height="584" key="#com.intellij.ide.macro.MacrosDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589920159169" />
+    <state x="734" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1589922794849">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="734" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589922794849" />
+    <state x="666" y="418" width="510" height="337" key="#com.intellij.tools.ToolEditorDialog" timestamp="1589919993538">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="666" y="418" width="510" height="337" key="#com.intellij.tools.ToolEditorDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919993538" />
+    <state x="661" y="399" width="520" height="307" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589927881215">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="661" y="399" width="520" height="307" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589927881215" />
+    <state x="533" y="149" width="777" height="807" key="CommitChangelistDialog2" timestamp="1589919835043">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="533" y="149" width="777" height="807" key="CommitChangelistDialog2/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919835043" />
+    <state width="731" height="466" key="DebuggerActiveHint" timestamp="1589927597973">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="731" height="466" key="DebuggerActiveHint/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589927597973" />
     <state x="100" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1589919064028">
       <screen x="0" y="27" width="1853" height="1053" />
     </state>
     <state x="100" y="125" width="1653" height="855" key="DiffContextDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919064028" />
+    <state x="704" y="345" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589920634410">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="704" y="345" width="424" height="484" key="FileChooserDialogImpl/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589920634410" />
     <state x="714" y="469" key="Github.CreateGistDialog" timestamp="1589915792632">
       <screen x="0" y="27" width="1853" height="1053" />
     </state>
     <state x="714" y="469" key="Github.CreateGistDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589915792632" />
+    <state width="1830" height="344" key="GridCell.Tab.0.bottom" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.0.bottom/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.0.center" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.0.center/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.0.left" timestamp="1589928676200">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.0.left/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676200" />
+    <state width="1830" height="344" key="GridCell.Tab.0.right" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.0.right/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.1.bottom" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.bottom/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.1.center" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.center/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.1.left" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.left/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
+    <state width="1830" height="344" key="GridCell.Tab.1.right" timestamp="1589928676201">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.right/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928676201" />
     <state x="720" y="289" width="403" height="526" key="VcsDiffUtil.ChangesDialog" timestamp="1589919206055">
       <screen x="0" y="27" width="1853" height="1053" />
     </state>
     <state x="720" y="289" width="403" height="526" key="VcsDiffUtil.ChangesDialog/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919206055" />
+    <state x="580" y="170" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589927667709">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="580" y="170" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589927667709" />
+    <state x="694" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589928705777">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="694" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589928705777" />
+    <state x="807" y="325" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1589919994935">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="807" y="325" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589919994935" />
+    <state x="476" y="291" width="891" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589927926660">
+      <screen x="0" y="27" width="1853" height="1053" />
+    </state>
+    <state x="476" y="291" width="891" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1853.1053/0.1080.1920.1080@0.27.1853.1053" timestamp="1589927926660" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
