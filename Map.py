@@ -14,6 +14,9 @@ class Map:
         self.street_list = []
         self.kreuzung_strasse_dict = {}
         self.street_count = int(self.map_input[0][0])
+        self.start = self.map_input[1]
+        self.ziel = self.map_input[2]
+        self.wege = []
 
         # Da die ersten drei Zeilen Anzahl der Straßen und Start/Endpunkt enthält
         # startet die Schleife erst bei inklusive 3 und endet bei dem Gesamt-Index (Straßenzahl + 3)
@@ -54,15 +57,35 @@ class Map:
     def add_street(self, street):
         self.street_list.append(street)
 
+    def rekursion(self, kreuzung, richtung, bisherige_punkte, anzahl_abgebogen):
 
-# Ein Objekt, dass den Start und Endpunkt, sowie die Länge einer Straße speichert
-class Street:
+        aktuelle_kreuzung = copy.deepcopy(kreuzung)
 
-    # Der Standardkonstruktor gibt ein Straßenobjekt zurück.
+        while not (len(self.kreuzung_strasse_dict[kreuzung]) == 0 or
+                   self.kreuzung_strasse_dict[kreuzung] == bisherige_punkte[:-1]):
+            bisherige_punkte.append(kreuzung)
+            if aktuelle_kreuzung == self.ziel:
+                tmplist = [bisherige_punkte, anzahl_abgebogen]
+                self.wege.append(tmplist)
+                break
+            dir_available = False
+            for i in self.kreuzung_strasse_dict[aktuelle_kreuzung]:
+                if self.street_list[i].dir == richtung:
+                    dir_available = True
+                    # TODO Insert wähle Straße
+                    self.rekursion(bisherige_punkte, anzahl_abgebogen)
+            if not dir_available:
+                # TODO Insert wähle Straße
+                self.rekursion(, bisherige_punkte, anzahl_abgebogen + 1)
 
-    def __init__(self, start_point, end_point):
-        self.start_point = start_point
-        self.end_point = end_point
+    # Ein Objekt, dass den Start und Endpunkt, sowie die Länge einer Straße speichert
+    class Street:
+
+        # Der Standardkonstruktor gibt ein Straßenobjekt zurück.
+
+        def __init__(self, start_point, end_point):
+            self.start_point = start_point
+            self.end_point = end_point
         self.length = math.sqrt((end_point.x - start_point.x) ** 2 + (end_point.y - start_point.y) ** 2)
         self.dir = None
 
