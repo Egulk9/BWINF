@@ -69,17 +69,19 @@ class Map:
         for i in self.kreuzung_strasse_dict[aktuelle_kreuzung]:
             if self.street_list[i].dir == richtung:
                 if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] -= aktuelle_kreuzung
+                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(
+                        aktuelle_kreuzung)
                     self.rekursion(i.start_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
                 elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] -= aktuelle_kreuzung
+                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(aktuelle_kreuzung)
                     self.rekursion(i.end_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
             else:
                 if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] -= aktuelle_kreuzung
+                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(
+                        aktuelle_kreuzung)
                     self.rekursion(i.start_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
                 elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] -= aktuelle_kreuzung
+                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(aktuelle_kreuzung)
                     self.rekursion(i.end_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
 
 
