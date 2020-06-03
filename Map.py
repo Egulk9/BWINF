@@ -14,8 +14,8 @@ class Map:
         self.street_list = []
         self.kreuzung_strasse_dict = {}
         self.street_count = int(self.map_input[0][0])
-        self.start = self.map_input[1]
-        self.ziel = self.map_input[2]
+        self.start = self.map_input[1][0]
+        self.ziel = self.map_input[2][0]
         self.wege = []
 
         # Da die ersten drei Zeilen Anzahl der Straßen und Start/Endpunkt enthält
@@ -69,20 +69,28 @@ class Map:
         for i in self.kreuzung_strasse_dict[aktuelle_kreuzung]:
             if self.street_list[i].dir == richtung:
                 if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(
-                        aktuelle_kreuzung)
-                    self.rekursion(i.start_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
+                    if self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] == i:
+                        self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(i)
+                        self.rekursion(self.street_list[i].start_point.original_string, richtung, bisherige_punkte,
+                                       anzahl_abgebogen)
+
                 elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(aktuelle_kreuzung)
-                    self.rekursion(i.end_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
+                    if self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] == i:
+                        self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(i)
+                        self.rekursion(self.street_list[i].end_point.original_string, richtung, bisherige_punkte,
+                                       anzahl_abgebogen)
             else:
                 if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(
-                        aktuelle_kreuzung)
-                    self.rekursion(i.start_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
+                    if self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] == i:
+                        self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string].remove(i)
+                        self.rekursion(self.street_list[i].start_point.original_string, self.street_list[i].dir,
+                                       bisherige_punkte, anzahl_abgebogen + 1)
+
                 elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
-                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(aktuelle_kreuzung)
-                    self.rekursion(i.end_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
+                    if self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] == i:
+                        self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string].remove(i)
+                        self.rekursion(self.street_list[i].end_point.original_string, self.street_list[i].dir,
+                                       bisherige_punkte, anzahl_abgebogen + 1)
 
 
 # Ein Objekt, dass den Start und Endpunkt, sowie die Länge einer Straße speichert
