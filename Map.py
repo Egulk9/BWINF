@@ -60,32 +60,36 @@ class Map:
     def rekursion(self, kreuzung, richtung, bisherige_punkte, anzahl_abgebogen):
 
         aktuelle_kreuzung = copy.deepcopy(kreuzung)
+        bisherige_punkte.append(kreuzung)
 
-        while not (len(self.kreuzung_strasse_dict[kreuzung]) == 0 or
-                   self.kreuzung_strasse_dict[kreuzung] == bisherige_punkte[:-1]):
-            bisherige_punkte.append(kreuzung)
-            if aktuelle_kreuzung == self.ziel:
-                tmplist = [bisherige_punkte, anzahl_abgebogen]
-                self.wege.append(tmplist)
-                break
-            dir_available = False
-            for i in self.kreuzung_strasse_dict[aktuelle_kreuzung]:
-                if self.street_list[i].dir == richtung:
-                    dir_available = True
-                    # TODO Insert wähle Straße
-                    self.rekursion(bisherige_punkte, anzahl_abgebogen)
-            if not dir_available:
-                # TODO Insert wähle Straße
-                self.rekursion(, bisherige_punkte, anzahl_abgebogen + 1)
+        if aktuelle_kreuzung == self.ziel:
+            tmplist = [bisherige_punkte, anzahl_abgebogen]
+            self.wege.append(tmplist)
+            return None
+        for i in self.kreuzung_strasse_dict[aktuelle_kreuzung]:
+            if self.street_list[i].dir == richtung:
+                if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
+                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] -= aktuelle_kreuzung
+                    self.rekursion(i.start_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
+                elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
+                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] -= aktuelle_kreuzung
+                    self.rekursion(i.end_point.original_string, richtung, bisherige_punkte, anzahl_abgebogen)
+            else:
+                if self.street_list[i].end_point.original_string == aktuelle_kreuzung:
+                    self.kreuzung_strasse_dict[self.street_list[i].start_point.original_string] -= aktuelle_kreuzung
+                    self.rekursion(i.start_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
+                elif self.street_list[i].start_point.original_string == aktuelle_kreuzung:
+                    self.kreuzung_strasse_dict[self.street_list[i].end_point.original_string] -= aktuelle_kreuzung
+                    self.rekursion(i.end_point.original_string, i.dir, bisherige_punkte, anzahl_abgebogen + 1)
 
-    # Ein Objekt, dass den Start und Endpunkt, sowie die Länge einer Straße speichert
-    class Street:
 
-        # Der Standardkonstruktor gibt ein Straßenobjekt zurück.
+# Ein Objekt, dass den Start und Endpunkt, sowie die Länge einer Straße speichert
+class Street:
+    # Der Standardkonstruktor gibt ein Straßenobjekt zurück.
 
-        def __init__(self, start_point, end_point):
-            self.start_point = start_point
-            self.end_point = end_point
+    def __init__(self, start_point, end_point):
+        self.start_point = start_point
+        self.end_point = end_point
         self.length = math.sqrt((end_point.x - start_point.x) ** 2 + (end_point.y - start_point.y) ** 2)
         self.dir = None
 
@@ -114,7 +118,6 @@ def render(tmpmap):
             tmpmap.street_list[i].end_point.x) + str(tmpmap.street_list[i].end_point.y))
     print("}")
 
-
 # Öffnen der Datei
 with open("abbiegen0.txt") as f:
     imap_input = f.readlines()
@@ -127,4 +130,5 @@ imap_input = [x.split(" ") for x in altinput]
 
 # Erzeugen der Karte
 map1 = Map(imap_input)
+map1.rekursion(altinput[1], None, [], 0)
 render(map1)
